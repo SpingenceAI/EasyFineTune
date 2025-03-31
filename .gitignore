@@ -8,3 +8,7 @@ outputs/
 output/
 unsloth_compiled_cache/
 mount_data/
+.cache/
+llama.cpp/
+*.gguf
+_unsloth_sentencepiece_temp/
