@@ -1,0 +1,13 @@
+llm:
+  model: openai/gpt-4o-mini
+  api_key: null
+  base_url: null
+  max_tokens: 4096
+  temperature: 0.5
+args:
+  chunk_size: 1024 # chunk size
+  chunk_overlap: 200 # chunk overlap
+  min_chunk_size: 512 # min chunk size
+  generate_questions_batch_num: 3 # generate questions batch num
+  answer_mode: 'reference' # generate mode
+  generate_num: 2 # generate num for each chunk

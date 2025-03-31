@@ -1,0 +1,11 @@
+model:
+  model_name: "unsloth/Meta-Llama-3.1-8B"
+dataset:
+  dataset_path: "mount_data/llm/train_data.json"
+training:
+  num_train_epochs: 1
+save:
+  output_dir: "mount_data/llm/outputs"
+  save_path: "mount_data/llm/model"
+  save_gguf: true
+  quantization: "q4_k_m"
