@@ -1,0 +1,10 @@
+model:
+  model_name: "unsloth/Qwen2-VL-7B-Instruct"
+dataset:
+  dataset_path: "mount_data/vlm/train_data/train_data.jsonl"
+training:
+  num_train_epochs: 1
+save:
+  output_dir: "mount_data/vlm/outputs"
+  save_path: "mount_data/vlm/model"
+  save_gguf: false # not yet support gguf quantization

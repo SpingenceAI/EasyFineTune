@@ -1,0 +1,10 @@
+*.ipynb
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.pyz
+outputs/
+output/
+unsloth_compiled_cache/
+mount_data/
