@@ -5,10 +5,11 @@ from pydantic import BaseModel
 # configs for generate data
 class LLMConfig(BaseModel):
     """LLM config for litellm"""
-
-    model: str
-    api_key: Optional[str] = None
-    base_url: Optional[str] = None
+    model: Optional[str] = None # litellm model name
+    hf_model: Optional[str] = None # hf model name
+    hf_token: Optional[str] = None # hf token
+    api_key: Optional[str] = None # litellm api key
+    base_url: Optional[str] = None # litellm base url
     max_tokens: Optional[int] = 4096
     temperature: Optional[float] = 0.5
 

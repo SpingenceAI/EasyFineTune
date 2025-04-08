@@ -17,6 +17,8 @@ import config
 import parser
 import prompts
 
+from llm import run_llm
+
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
@@ -28,21 +30,6 @@ def read_config(config_path: str) -> config.Config:
         yaml_config = yaml.safe_load(f)
     return config.Config(**yaml_config)
 
-
-def run_llm(
-    llm_config: config.LLMConfig,
-    messages: List[dict],
-) -> str:
-    """use litellm to generate json data"""
-    response = completion(
-        model=llm_config.model,
-        messages=messages,
-        api_key=llm_config.api_key,
-        base_url=llm_config.base_url,
-        max_tokens=llm_config.max_tokens,
-        temperature=llm_config.temperature,
-    )
-    return response.choices[0].message.content
 
 
 class Questions(BaseModel):
