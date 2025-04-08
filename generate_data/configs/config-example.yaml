@@ -2,6 +2,8 @@ llm:
   model: openai/gpt-4o-mini
   api_key: null
   base_url: null
+  hf_model: null # Qwen/Qwen2-1.5B-Instruct
+  hf_token: null
   max_tokens: 4096
   temperature: 0.5
 args:

@@ -1,0 +1,13 @@
+FROM nvcr.io/nvidia/pytorch:25.03-py3
+WORKDIR /workspace
+
+RUN pip install --no-deps bitsandbytes accelerate xformers==0.0.29 peft trl triton
+RUN pip install --no-deps cut_cross_entropy unsloth_zoo
+RUN pip install sentencepiece protobuf datasets huggingface_hub hf_transfer
+RUN pip install --no-deps unsloth
+RUN pip install pydantic
+RUN pip install transformers
+RUN pip install litellm tqdm pydantic
+RUN pip install markitdown
+
+WORKDIR /workspace

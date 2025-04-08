@@ -32,6 +32,15 @@
      base_url: http://localhost:11434
    ```
 
+   Hugging Face:
+
+   ```yaml
+   # mount_data/generate_data/config.yaml (if using hugging face)
+   llm:
+     hf_model: meta-llama/Llama-3.1-8B-Instruct
+     hf_token: ENTER_YOUR_HUGGING_FACE_TOKEN
+   ```
+
 4. prepare documents to `mount_data/generate_data/documents`
    ```bash
    # example
@@ -45,12 +54,24 @@
    └── document_3.docx
    ```
 5. Build docker image
+
+   LiteLLM:
    ```bash
    make build_generate_data
    ```
+   Hugging Face:
+   ```bash
+   make build_generate_data_hf
+   ```
 6. Launch the container
+
+   LiteLLM:
    ```bash
    make launch_generate_data
+   ```
+   Hugging Face:
+   ```bash
+   make launch_generate_data_hf
    ```
 7. Run the following command to generate training data
    ```bash
