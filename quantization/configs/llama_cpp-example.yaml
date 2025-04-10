@@ -1,0 +1,3 @@
+model_name: "mount_data/quantization/Qwen2-1.5B"
+quantization: "Q8_0" #"Q4_K_M"S,L, null, "Q8_K_M"S,L
+save_path: "mount_data/quantization/quantized_model"
