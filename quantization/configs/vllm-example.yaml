@@ -1,0 +1,5 @@
+model_name: "Qwen/Qwen2-1.5B" # huggingface model id
+max_seq_len: 2048
+calibration_samples: 512
+calibration_dataset: "HuggingFaceH4/ultrachat_200k" # calibration dataset
+save_path: "mount_data/quantization/quantized_model" # save path

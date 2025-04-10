@@ -9,6 +9,7 @@ EasyFinetune is a simple toolkit to help you fine-tune large language models (LL
 - 🛠️ A data generation tool to turn raw documents into structured training data (instruction, input, output)
 - 🧠 A training script powered by Unsloth for fast and memory-efficient fine-tuning
 - No complex setup. Just bring your documents, and start fine-tuning!
+- 📚 A quantization toolkit to quantize the fine-tuned model to lower memory usage and faster inference
 
 ## Features
 
@@ -34,11 +35,21 @@ Please refer to [VLM Tutorial](ft_unsloth/docs/get_started_vlm.md) for more deta
 
 > Using RTX 4000ada, train dataset with 200 pairs dataset, finetune for 10 epochs, using ~8GB vRAM, cost ~20 minutes.
 
+## Quantization
+
+Using vllm or llama.cpp to do quantization
+
+VLLM:
+Please refer to [vllm-Quantization](quantization/docs/get_started-vllm.md)
+
+llama.cpp:
+Please refer to [llama-cpp-Quantization](quantization/docs/get_started-llama-cpp.md)
+
 # Roadmap
 
+- [X] Quantization toolkit
+- [X] Generate data from Huggingface models
 - [ ] Generate training data using RAG
-- [ ] Quantization toolkit
 - [ ] Inference toolkit
-- [ ] Generate data from Huggingface models
 - [ ] Generate data for VLM models
 - [ ] VLM GGUF Quantization

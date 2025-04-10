@@ -1,0 +1,8 @@
+FROM vllm/vllm-openai:v0.8.3
+
+RUN uv pip install --system vllm[audio]==0.8.3
+RUN pip install llmcompressor
+WORKDIR /workspace
+
+# override entrypoint, offical entrypoint will launch vllm server
+ENTRYPOINT []
