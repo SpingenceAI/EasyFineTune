@@ -1,0 +1,11 @@
+# Save_path, nvme_path, log_name settings
+path_settings:
+  lora:
+    lora_weight: ""       # whether to load lora_weight (only activated when lora: true)
+    lora_output_dir: ""   # whether to save lora adapter weight (only activated when lora: true)
+  model_name_or_path: "/home/root/workspace/Qwen2-VL-2B-Instruct"
+  data_path: 
+    - ./phison_config/dataset_config.yaml 
+  nvme_path: "/mnt/nvme0"
+  output_dir: "/home/root/workspace/output"
+  log_name: "/home/root/workspace/output/test.log"
