@@ -1,0 +1,11 @@
+QA_dataset:
+  data_path: "/home/root/workspace/vlm_ft/example_dataset"
+  image_folder: ""
+  strategy: "qa"
+  system_prompt: "This is a chat between a user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user's questions based on the context. The assistant should also indicate when the answer cannot be found in the context."
+  user_prompt: "{question}"
+  question_key: "question"
+  answer_key: "answer"
+  image_key: "image"
+  exp_type: train ## train or inference
+  label_key: "answer"
